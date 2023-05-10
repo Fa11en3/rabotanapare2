@@ -1,0 +1,34 @@
+def main():
+    while True:
+        a = float(input('Введите первое число: '))
+ 
+        if a:
+            b = float(input('Введите второе число: '))
+ 
+            if b:
+                operation = input('Введите знак операции: ')
+ 
+                if operation == '+':
+                    operation_plus(a, b, operation)
+ 
+                elif operation == '-':
+                    operatin_minus(a, b, operation)
+ 
+                else:
+                    print('Вы не указали знак операции')
+            else:
+                print('Вы не указали число')
+ 
+        else:
+            print('Вы не указали число')
+ 
+def operation_plus(a, b, operation):
+    if operation == '+':
+        rezult = a + b
+        print(a, '+', b, '=', rezult)
+ 
+def operatin_minus(a, b, operation):
+    if operation == '-':
+        rezult = a - b
+        print('{} - {} = {}'.format(a, b, rezult))
+main()
