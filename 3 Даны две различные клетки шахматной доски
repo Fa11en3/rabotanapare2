@@ -1,0 +1,38 @@
+
+x1 = int(input())
+y1 = int(input())
+x2 = int(input())
+y2 = int(input())
+
+if x1 == x2 or y1 == y2:
+print('YES')
+else:
+print('NO')
+Для короля
+if abs(x1 - x2) <= 1 and abs(y1 - y2) <= 1:
+print('YES')
+else:
+print('NO')
+СЛУН
+if abs(x1 - x2) == abs(y1 - y2):
+print('YES')
+else:
+print('NO')
+ДЛЯ ФЕРЗЯ
+if x1 == x2 or y1 == y2 or abs(x1 - x2) == abs(y1 - y2):
+print('YES')
+else:
+print('NO')
+Для коня
+x1 = int(input())
+y1 = int(input())
+x2 = int(input())
+y2 = int(input())
+
+rx = abs(x1 - x2)
+ry = abs(y1 - y2)
+
+if (rx == 1 and ry == 2) or (rx == 2 and ry == 1):
+print('YES')
+else:
+print('NO')
