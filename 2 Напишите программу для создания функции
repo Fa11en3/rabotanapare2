@@ -1,0 +1,8 @@
+def namer(mstr, age):
+    print('привет,' + mstr + str(age) + 'лет' + ',' + 'давай дружить')  # '
+ 
+ 
+if __name__ == '__main__':
+    mstr = input("введите имя")
+    age = float(input("возраст"))
+    namer(mstr, age)
